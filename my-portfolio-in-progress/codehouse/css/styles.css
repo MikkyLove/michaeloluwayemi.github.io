@@ -266,7 +266,7 @@ footer p {
     body {
         height: 100vh;
         width: 100%;
-        overflow-x: none;
+        overflow-x: hidden;
     }
     /*navigation section*/
     #navLinks {
