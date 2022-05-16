@@ -21,7 +21,11 @@ body {
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     font-size: 1em;
-    overflow-x: hidden;
+    -webkit-overflow-x: hidden;
+    
+    -o-overflow-x: hidden;
+    -moz-overflow-x: hidden;
+    -ms-overflow-x: hidden;
 }
 
 header {
@@ -266,7 +270,6 @@ footer p {
     body {
         height: 100vh;
         width: 100%;
-        overflow-x: hidden;
     }
     /*navigation section*/
     #navLinks {
@@ -358,12 +361,7 @@ footer p {
 }
 
 @media (max-width: 560px) {
-    body {
-        height: 100vh;
-        width: 100%;
-        overflow-x: hidden;
-    }
-    
+
     /*...about section...*/
     #abt {
         display: block;
