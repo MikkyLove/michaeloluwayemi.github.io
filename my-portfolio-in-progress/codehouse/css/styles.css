@@ -358,6 +358,12 @@ footer p {
 }
 
 @media (max-width: 560px) {
+    body {
+        height: 100vh;
+        width: 100%;
+        overflow-x: hidden;
+    }
+    
     /*...about section...*/
     #abt {
         display: block;
