@@ -17,10 +17,13 @@ h2 {
 body {
     height: 100vh;
     min-width: 100%;
+    
+    max-width: 100%;
     background: rgba(151, 128, 241, .3);
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     font-size: 1em;
+    overflow-x: hidden;
     -webkit-overflow-x: hidden;
     
     -o-overflow-x: hidden;
