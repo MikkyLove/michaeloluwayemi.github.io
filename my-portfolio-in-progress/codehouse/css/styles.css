@@ -1,0 +1,364 @@
+/*...main section...*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 35px;
+    text-align: center;
+    margin: 20vh 0 0 0;
+    color: red;
+}
+
+body {
+    height: 100vh;
+    min-width: 100%;
+    background: rgba(151, 128, 241, .3);
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1em;
+    overflow-x: hidden;
+}
+
+header {
+    position: relative;
+    background: rgb(209, 198, 198);
+    display: flex;
+    justify-content: space-between;
+}
+
+header img {
+    height: 3em;
+    margin: 3vh 0 0 2vw;
+}
+
+header nav {
+    display: flex;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    margin: 30px 4vw 0 0;
+}
+
+header nav ul li {
+    margin: 0 3vw 0 0;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: rgb(197, 17, 152);
+    /*font-family: Arial, Helvetica, sans-serif;*/
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: .85em;
+}
+
+header nav ul li a:hover {
+    opacity: .5;
+    transition: .5s ease-in-out;
+}
+
+header nav ul li a::after {
+    content: '';
+    width: 0;
+    height: 2px;
+    display: block;
+    margin: auto;
+    background: rgb(197, 17, 152);
+    opacity: 0;
+}
+
+header nav ul li a:hover::after {
+    width: 100%;
+    opacity: 1;
+    transition: .5s ease-in-out;
+}
+
+.fa {
+    visibility: hidden;
+}
+
+audio {
+    margin: 2vh 0 2vh 0;
+}
+
+#content-one {
+    display: flex;
+    justify-content: space-between;
+    /*margin: .6vh 0 0 0;*/
+    min-height: 100%;
+    min-width: 100%;
+    background: linear-gradient(rgba(128, 0, 128, .2), rgba(231, 182, 231, 0.5)), url(../../images/background-img.jpg);
+    background-size: cover;
+    /*background-position: center;*/
+}
+
+#content-one h1 {
+    padding: 30vh 0 0 10vw;
+    color: white;
+    /*font-family: sans-serif;*/
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 3.5em;
+}
+
+#content-one p {
+    margin: 2vh 0 0 10vw;
+    text-align: justify;
+}
+
+#content-one img {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    border-radius: 250px;
+    margin: 20vh 10vw;
+}
+
+
+/*...service section...*/
+
+#skillset {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+#skillset h3 {
+    margin: 2vw;
+    padding: 8vw;
+    box-shadow: 5px -5px 2px rgb(209, 204, 204);
+    cursor: pointer;
+    font-size: 2vw;
+    text-align: center;
+    font-weight: 500;
+}
+
+#skillset h3:hover {
+    opacity: .85;
+    transition: .5s ease-in;
+    padding: 10vw;
+}
+
+#web {
+    background: url(../../images/web.png);
+    background-size: cover;
+    background-position: center;
+}
+
+#gra {
+    background: url(../../images/gra.png);
+    background-size: cover;
+    background-position: center;
+}
+
+#anime {
+    background: url(../../images/anime.jpg);
+    background-size: cover;
+}
+
+
+/*...PROJECT SECTION...*/
+
+
+/*...about section...*/
+
+.bef {
+    color: black;
+}
+
+.add {
+    color: red;
+}
+
+#abt {
+    display: flex;
+}
+
+h3 {
+    margin: 3vw 0 2vw 2vw;
+    font-size: 2em;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#abt img {
+    margin: 1.1vw;
+}
+
+#abt a {
+    position: relative;
+    top: 3vh;
+    text-decoration: none;
+    color: black;
+    padding: 15px;
+    border: 2px solid red;
+    font-weight: 400;
+    font-size: .6em;
+    cursor: pointer;
+}
+
+#abt a:hover {
+    background: red;
+    color: white;
+    transition: all .5s ease-in-out;
+}
+
+
+/*...contact section...*/
+
+.contact-icon {
+    position: relative;
+    visibility: visible;
+    font-size: 30px;
+    border: 2px solid purple;
+    border-radius: 2px;
+    padding: 25px;
+    color: purple;
+    text-decoration: none;
+    margin: 5vh;
+}
+
+.contact-icon:hover {
+    background: purple;
+    color: white;
+    transition: 1s ease;
+}
+
+#con {
+    text-align: center;
+}
+
+
+/*...footer section...*/
+
+footer {
+    position: relative;
+    display: block;
+    background: rgb(209, 198, 198);
+    color: rgb(197, 17, 152);
+    text-align: center;
+    font-size: .85em;
+    padding: 10px;
+    bottom: 0;
+    margin: 0;
+}
+
+footer p {
+    font-weight: bold;
+}
+
+#top {
+    position: relative;
+    margin: 15px 0 0 0;
+    text-decoration: none;
+    top: 15px;
+    bottom: 10px;
+    font-weight: bold;
+}
+
+@media (max-width: 700px) {
+    body {
+        height: 100vh;
+        width: 100%;
+    }
+    /*navigation section*/
+    #navLinks {
+        position: absolute;
+        display: block;
+        background: rgb(196, 181, 196);
+        min-height: 100vh;
+        min-width: 50vw;
+        top: 0;
+        right: -60vw;
+        transition: all 1s ease;
+        z-index: 1;
+    }
+    header nav ul {
+        display: block;
+        /*padding: 2rem;*/
+    }
+    header nav ul li {
+        padding: 5vh 0 0 3vh;
+        width: 150%;
+        border-bottom: 2px solid rgb(197, 17, 152);
+    }
+    header nav ul li:hover {
+        background: rgba(197, 17, 152, .5);
+    }
+    header nav ul li a:hover {
+        color: white;
+        opacity: 1;
+    }
+    header nav ul li a:hover::after {
+        opacity: 0;
+    }
+    /*
+    #navLinks {
+        right: -45vw;
+    }*/
+    .fa {
+        margin: 0 5vw 3vw 0;
+        visibility: visible;
+        color: rgb(197, 17, 152);
+        font-size: 1.25em;
+        cursor: pointer;
+    }
+    .nav {
+        font-size: 2em;
+        margin: 5vw 8vw 0 3vw;
+    }
+    .nav:hover {
+        opacity: .5;
+        transition: .5s;
+    }
+    /*...main section...*/
+    #content-one {
+        display: block;
+        text-align: center;
+    }
+    #content-one h1 {
+        position: relative;
+        margin: 0;
+        padding: 30vh 0 0 0;
+        font-size: 50px;
+    }
+    #content-one p {
+        position: relative;
+        text-align: center;
+        padding: 2vh 0 0 0;
+        margin: 0;
+    }
+    #content-one img {
+        margin: 10vh 0 10vh 0;
+        padding: 0;
+        width: 250px;
+        height: 250px;
+        border-radius: 150px;
+    }
+    /*...services section...*/
+    #skillset {
+        display: block;
+        text-align: center;
+    }
+    #skillset h3 {
+        text-align: center;
+        margin: 15vw;
+        line-height: 30vw;
+        font-weight: bold;
+        font-size: 15px;
+    }
+    /*contact section*/
+}
+
+@media (max-width: 560px) {
+    /*...about section...*/
+    #abt {
+        display: block;
+    }
+}
